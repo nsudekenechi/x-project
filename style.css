@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: black;
+}
+#grid-container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: white;
+  font-family: "Mulish", sans-serif;
+}
+
+#logo-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18rem;
+}
+
+#text-con {
+  padding: 80px 20px;
+}
+#text-con h1 {
+  font-family: "Mulish", sans-serif;
+  font-size: 4rem;
+}
+
+#join {
+  font-size: 2rem;
+  font-family: "Mulish", sans-serif;
+  margin-block: 50px 20px;
+}
+
+button {
+  width: 60%;
+  border-radius: 100px;
+  outline: none;
+  border: none;
+  height: 45px;
+  margin-bottom: 10px;
+  font-family: "Mulish", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
+}
+#apple-btn i {
+  font-size: 25px;
+}
+#goggle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+
+#goggle-btn div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#goggle-btn div img {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#button-title {
+  text-align: left;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+}
+
+#button-subtitle {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: 3px;
+}
+
+#or-con {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-transform: uppercase;
+  font-family: "Mulish", sans-serif;
+  margin-bottom: 20px;
+}
+
+#or-con hr {
+  width: 26%;
+  opacity: 0.2;
+}
+
+#create-btn {
+  background-color: rgb(29, 155, 240);
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+#terms-con {
+  width: 60%;
+  color: rgb(113, 118, 123);
+  font-size: 12px;
+}
+
+#terms-con a {
+  color: rgb(29, 155, 240);
+  text-decoration: none;
+}
+#terms-con a:hover {
+  text-decoration: underline;
+}
+#already-text {
+  margin-block: 50px 20px;
+}
+
+.border-btn {
+  background: transparent;
+  outline: 1px solid rgb(83, 100, 113);
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+}
+.border-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+#border-btn-sign {
+  color: rgb(29, 155, 240);
+}
+
+#border-btn-sign:hover {
+  background-color: rgba(83, 100, 113, 0.2);
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Mulish", sans-serif;
+  gap: 10px;
+  padding: 15px;
+  font-size: 12px;
+  justify-content: center;
+  align-items: center;
+}
+li {
+  list-style: none;
+  color: rgb(113, 118, 123);
+}
+
+nav ul a {
+  color: rgb(113, 118, 123);
+  text-decoration: none;
+  border-right: 1px solid;
+  padding-right: 10px;
+}
+
+/*  Responsiveness for Mobile Devices */
+@media screen and (max-width: 767px) {
+  #grid-container {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 50px 30px;
+  }
+
+  #logo-con {
+    font-size: 35px;
+    justify-content: left;
+    margin-bottom: 40px;
+  }
+
+  #text-con {
+    padding: 0px;
+  }
+
+  #text-con h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    width: 50%;
+  }
+
+  #join {
+    font-size: 1.5rem;
+    margin-block: 40px 20px;
+  }
+
+  button,  #or-con hr, #terms-con{
+    width: 100%;
+  }
+  
+}
